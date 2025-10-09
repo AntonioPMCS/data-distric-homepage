@@ -58,10 +58,18 @@
             padding-top: 10px;
         }
 
+        .h2-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 20px;
+        }
+        
         .logo-container h2 {
             padding-left: 5px;
             color: white;
-            font-weight: 900;
+            font-weight: 500;
+            letter-spacing: 5px;
         }
 
         .logo-container h4 {
@@ -92,6 +100,10 @@
             .logo-container h1 {
                 font-size: 48px;
                 padding-top: 8px;
+            }
+            
+            .h2-container {
+                gap: 15px;
             }
             
             .logo-container h2 {
@@ -150,6 +162,13 @@
                 padding-top: 0;
             }
             
+            .h2-container {
+                margin-top: 20px;
+                gap: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
             .logo-container h2 {
                 font-size: 10px;
                 padding-left: 0;
@@ -162,7 +181,7 @@
             
             .logo-container p {
                 font-size: 14px;
-                margin-top: 40px;
+                margin-top: 80px;
                 text-align: center;
             }
         }
@@ -174,7 +193,11 @@
             <img src="assets/white-transparent-logo.png" alt="Data District Logo">
             <div class="text-column">
                 <h1>Data District</h1>
-                <h2>⁠AN AI & DATA CENTER COMPANY</h2>
+                <div class="h2-container">
+                    <h2>AN AI</h2>
+                    <h2>& </h2>
+                    <h2>DATA CENTER COMPANY</h2>
+                </div>
             </div>
         </div>
         <h4>Coming soon</h4>
