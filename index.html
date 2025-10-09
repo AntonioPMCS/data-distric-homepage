@@ -17,7 +17,7 @@
         body {
             min-height: 100vh;
             /*background: linear-gradient(#00b894, 20%, #004d66);*/
-            background: linear-gradient(#00b894, 15%, #090b17);
+            background: linear-gradient(#00b894, 10%, #090b17);
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
@@ -31,39 +31,63 @@
             gap: 30px;
         }
         
+        .header-row {
+            display: flex;
+            align-items: flex-end;
+            gap: 30px;
+        }
+        
+        .text-column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
         .logo-container img {
-            height: 180px;
+            height: 120px;
         }
         
         .logo-container h1 {
             color: white;
-            font-size: 92px;
+            font-size: 68px;
             font-weight: 900;
-            line-height: 1.2;
+            line-height: 1;
             font-family: 'Bruno Ace SC', sans-serif;
+            padding-top: 10px;
         }
 
-        .logo-container h2, h4 {
+        .logo-container h2 {
+            padding-left: 5px;
             color: white;
             font-weight: 900;
-            font-family: 'Bruno Ace SC', sans-serif;
+        }
+
+        .logo-container h4 {
+            padding-top:40px;
+            color: white;
+            font-weight: 300;
+            font-size: 30px;
+            font-family: 'Tahoma', sans-serif;
         }
         
         .logo-container p {
+            margin-top: 100px;
             color: white;
             font-size: 20px;
-            margin-top: 20px;
-            font-family: 'Bruno Ace SC', sans-serif;
         }
     </style>
 </head>
 <body>
     <div class="logo-container">
-        <img src="assets/white-transparent-logo.png" alt="Data District Logo">
-        <h1>Data District</h1>
-        <h2>⁠AN AI & DATA CENTER COMPANY</h2>
+        <div class="header-row">
+            <img src="assets/white-transparent-logo.png" alt="Data District Logo">
+            <div class="text-column">
+                <h1>Data District</h1>
+                <h2>⁠AN AI & DATA CENTER COMPANY</h2>
+            </div>
+        </div>
         <h4>Coming soon</h4>
-        <p>info@data-district.com</p>
+        <p>Contact | info@data-district.com</p>
     </div>
 </body>
 </html>
